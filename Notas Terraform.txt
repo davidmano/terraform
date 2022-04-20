@@ -1,0 +1,19 @@
+Works:
+
+resource "azurerm_virtual_machine_extension" "main" {
+  name                 = "hostname"
+  virtual_machine_id   = azurerm_virtual_machine.main.id
+  publisher            = "Microsoft.Azure.Extensions"
+  type                 = "CustomScript"
+  type_handler_version = "2.0"
+
+  settings = <<SETTINGS
+    {
+        "commandToExecute": "sudo yum install bind-libs bind bind-utils -y"
+    }
+SETTINGS
+
+}
+
+
+https://git.euipo.europa.eu/projects/IHC/repos/azure-rancher-server-install/browse/main.tf
