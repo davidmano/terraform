@@ -7,5 +7,8 @@ https://dev.azure.com/euipo/Terraform
 
 https://blog.gruntwork.io/terraform-tips-tricks-loops-if-statements-and-gotchas-f739bbae55f9
 
+
+https://www.hashicorp.com/certification/terraform-associate
+
  Because azurerm_public_ip.main has "count" set, its attributes must be accessed on specific instances
 terraform import azurerm_windows_virtual_machine.example /subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/mygroup1/providers/Microsoft.Compute/virtualMachines/machine1
